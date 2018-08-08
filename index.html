@@ -17,35 +17,50 @@
                     <p>BROWSE</p>
                 </a>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue">
-                    <i class="fas fa-image w3-xlarge"></i>                            <p>SHOT</p>
+                    <i class="fas fa-image w3-xlarge"></i>                            
+                    <p>SHOT</p>
                 </a>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue">
                     <i class="fas fa-search-plus w3-xlarge"></i>
                     <p>ZOOM IN</p>
                 </a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue">                            <i class="fas fa-search-minus w3-xlarge"></i>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue">                            
+                    <i class="fas fa-search-minus w3-xlarge"></i>
                     <p>ZOOM OUT</p>
                 </a>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue">
                     <i class="fas fa-cog w3-xlarge"></i>
-                    <p>SETTING</p>                        </a>
+                    <p>SETTING</p>                        
+                </a>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue">
                     <i class="fas fa-search w3-xlarge"></i>
                     <p>SEARCH</p>
                     </a>
                 <a href="#" onclick="w3_close_sideBar()" class="w3-display-bottomleft w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue">
-                    <i class="fas fa-times"></i>                        </a>
+                    <i class="fas fa-times"></i>                        
+                </a>
             </div>
             
             <i class="fas fa-align-justify w3-margin w3-button w3-xxlarge w3-text-blue" onclick="w3_open_sideBar()"></i>
         </div>
         
         <div>
-            <div class="w3-display-right w3-center w3-card w3-animate-right w3-sidebar w3-bar-block w3-small w3-blue" id="myInfoBar" style="width: 6%; display:none">
+            <div class="w3-display-right w3-center w3-card w3-animate-right w3-sidebar w3-bar-block w3-small w3-blue" id="myInfoBar" style="width: 15%; display:none">
                 
+                <div class="w3-container w3-xlarge w3-left-align w3-margin">
+                    <p>Graph info:</p>
+                </div>
+
+                <div class="w3-container w3-large w3-left-align w3-margin">
+                    <p class="w3-margin">Name:</p>
+                    <p class="w3-margin">Nodes:</p>
+                    <p class="w3-margin">Edges:</p>
+                </div>
+
                 <a href="#" onclick="w3_close_infoBar()" class="w3-display-bottomright w3-bar-item w3-button w3-padding-large w3-hover-white w3-text-white">
                     <i class="fas fa-times"></i>
                 </a>
+
             </div>
 
             <i class="fas fa-info w3-display-topright w3-margin w3-button w3-xlarge w3-text-blue" onclick="w3_open_infoBar()"></i>
