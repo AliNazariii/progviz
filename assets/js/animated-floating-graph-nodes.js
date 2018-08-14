@@ -263,7 +263,8 @@ function redrawOutput(svgElem, nodes, edges) {
 		circElem.setAttribute("cx", node.posX);
 		circElem.setAttribute("cy", node.posY);
 		circElem.setAttribute("r", node.radius);
-		circElem.setAttribute("fill", "rgba(129,139,197," + node.opacity.toFixed(3) + ")");
+		// circElem.setAttribute("fill", "rgba(129,139,197," + node.opacity.toFixed(3) + ")");
+		circElem.setAttribute("fill", "rgba(33,150,243," + node.opacity.toFixed(3) + ")");
 		gElem.appendChild(circElem);
 	});
 	
@@ -284,7 +285,8 @@ function redrawOutput(svgElem, nodes, edges) {
 			lineElem.setAttribute("y1", nodeA.posY - dy * nodeA.radius);
 			lineElem.setAttribute("x2", nodeB.posX + dx * nodeB.radius);
 			lineElem.setAttribute("y2", nodeB.posY + dy * nodeB.radius);
-			lineElem.setAttribute("stroke", "rgba(129,139,197," + opacity.toFixed(3) + ")");
+			// lineElem.setAttribute("stroke", "rgba(129,139,197," + opacity.toFixed(3) + ")");
+			lineElem.setAttribute("stroke", "rgba(122,182,230," + opacity.toFixed(3) + ")");
 			gElem.appendChild(lineElem);
 		}
 	});
