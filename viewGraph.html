@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/w3.css">
+        <link rel="stylesheet" href="assets/css/mine.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     </head>
     <body class="w3-light-grey w3-mobile">
@@ -28,7 +29,7 @@
                     <p>ZOOM OUT</p>
                 </a>
                 <div>
-                    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue" onclick="document.getElementById('settingModal').style.display='block'">
+                    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue" onclick="openSetting()">
                         <i class="fas fa-cog w3-xlarge"></i>
                         <p>SETTING</p>                        
                     </a>
@@ -39,12 +40,18 @@
                                 <h2>Setting</h2>
                             </header>
                             <div class="w3-container">
-                                <p>Setting components...</p>
+                                <div class="w3-container w3-light-gray w3-margin">
+                                    <p class="w3-large">Theme:</p>
+                                    <div class="w3-bar w3-margin" style="display:flex">
+                                        <button class="w3-bar-item w3-button w3-blue w3-hover-blue" id="lightTheme" onclick="lightTheme()">Light</button>
+                                        <button class="w3-bar-item w3-button" id="darkTheme" onclick="darkTheme()">Dark</button>
+                                    </div>
+                                </div>
                                 <br><br><br><br><br><br><br>
                             </div>
                             <footer class="w3-blue w3-row">
                                 <div class="w3-col s6 w3-blue w3-center"><a href="#" class="w3-button w3-hover-light-gray w3-hover-text-blue" style="width:100%">Save</a></div>
-                                <div class="w3-col s6 w3-blue w3-center"><a href="#" class="w3-button w3-hover-light-gray w3-hover-text-blue" style="width:100%" onclick="document.getElementById('settingModal').style.display='none'">Cancel</a></div>
+                                <div class="w3-col s6 w3-blue w3-center"><a href="#" class="w3-button w3-hover-light-gray w3-hover-text-blue" style="width:100%" onclick="closeSetting()">Cancel</a></div>
                             </footer>
                         </div>
                      </div>
@@ -55,12 +62,12 @@
                     <i class="fas fa-search w3-xlarge"></i>
                     <p>SEARCH</p>
                     </a>
-                <a href="#" onclick="w3_close_sideBar()" class="w3-display-bottomleft w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue">
+                <a href="#" onclick="closeSideBar()" class="w3-display-bottomleft w3-bar-item w3-button w3-padding-large w3-hover-blue w3-text-blue">
                     <i class="fas fa-times"></i>                        
                 </a>
             </div>
             
-            <i class="fas fa-align-justify w3-margin w3-button w3-xxlarge w3-text-blue w3-hover-blue w3-hover-text-white" onclick="w3_open_sideBar()"></i>
+            <i class="fas fa-align-justify w3-margin w3-button w3-xxlarge w3-text-blue w3-hover-blue w3-hover-text-white" onclick="openSideBar()"></i>
         </div>
         
         <div>
@@ -75,13 +82,13 @@
                     <p class="w3-container">Edges:</p>
                 </div>
 
-                <a href="#" onclick="w3_close_infoBar()" class="w3-display-topleft w3-xlarge w3-margin-bottom w3-button w3-padding-large w3-hover-blue w3-text-white">
+                <a href="#" onclick="closeInfoBar()" class="w3-display-topleft w3-xlarge w3-margin-bottom w3-button w3-padding-large w3-hover-blue w3-text-white">
                     <i class="fas fa-times"></i>
                 </a>
 
             </div>
 
-            <i class="fas fa-info w3-display-topright w3-margin w3-left w3-xlarge w3-text-blue w3-hover-text-white w3-button w3-hover-blue" onclick="w3_open_infoBar()"></i>
+            <i class="fas fa-info w3-display-topright w3-margin w3-left w3-xlarge w3-text-blue w3-hover-text-white w3-button w3-hover-blue" onclick="openInfoBar()"></i>
         </div>
         
 
