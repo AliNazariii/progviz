@@ -20,11 +20,15 @@ function openSetting() {
 }
 
 function lightTheme() {
-    document.getElementById('lightTheme').classList.add("w3-blue w3-hover-blue");
-    document.getElementById('lightTheme').classList.add("w3-gray w3-hover-blue");
+    w3.removeClass('#lightTheme','w3-light-gray');
+    w3.addClass('#lightTheme','w3-blue');
+    w3.removeClass('#darkTheme','w3-blue');
+    w3.addClass('#darkTheme','w3-light-gray');
 }
 function darkTheme() {
-    document.getElementById('darkTheme').classList.add("w3-blue w3-hover-blue");
-    document.getElementById('darkTheme').classList.add("w3-gray w3-hover-blue");
-    document.getElementById("darkTheme").style.color = "blue";
+    w3.removeClass('#darkTheme','w3-light-gray');
+    w3.addClass('#darkTheme','w3-blue');
+    w3.removeClass('#lightTheme','w3-blue');
+    w3.addClass('#lightTheme','w3-light-gray');
 }
+
