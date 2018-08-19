@@ -69,6 +69,14 @@ function lightTheme() {
     w3.addClass('#setting', 'w3-hover-blue');
     w3.removeClass('#setting','w3-hover-text-teal');
     w3.addClass('#setting', 'w3-hover-text-white');
+
+    //search change theme
+    w3.removeClass('#search', 'w3-text-white');
+    w3.addClass('#search','w3-text-blue');
+    w3.removeClass('#search','w3-hover-white');
+    w3.addClass('#search', 'w3-hover-blue');
+    w3.removeClass('#search','w3-hover-text-teal');
+    w3.addClass('#search', 'w3-hover-text-white');
 }
 function darkTheme() {
     w3.removeClass('#darkTheme','w3-light-gray');
@@ -120,6 +128,14 @@ function darkTheme() {
     w3.addClass('#setting', 'w3-hover-white');
     w3.removeClass('#setting','w3-hover-text-white');
     w3.addClass('#setting', 'w3-hover-text-teal');
+
+    //search change theme
+    w3.removeClass('#search','w3-text-blue');
+    w3.addClass('#search', 'w3-text-white');
+    w3.removeClass('#search','w3-hover-blue');
+    w3.addClass('#search', 'w3-hover-white');
+    w3.removeClass('#search','w3-hover-text-white');
+    w3.addClass('#search', 'w3-hover-text-teal');
 }
 
 // function leftSideButtonsChangeTheme(nameID) {
