@@ -29,6 +29,13 @@ function lightTheme() {
     w3.addClass('#bodyID','w3-light-gray');
 
     w3.removeClass('#mySidebar', 'w3-teal');
+
+    w3.removeClass('#browse', 'w3-text-white');
+    w3.addClass('#browse','w3-text-blue');
+    w3.removeClass('#browse','w3-hover-white');
+    w3.addClass('#browse', 'w3-hover-blue');
+    w3.removeClass('#browse','w3-hover-text-teal');
+    w3.addClass('#browse', 'w3-hover-text-white');
 }
 function darkTheme() {
     w3.removeClass('#darkTheme','w3-light-gray');
@@ -45,6 +52,8 @@ function darkTheme() {
     w3.addClass('#browse', 'w3-text-white');
     w3.removeClass('#browse','w3-hover-blue');
     w3.addClass('#browse', 'w3-hover-white');
+    w3.removeClass('#browse','w3-hover-text-white');
+    w3.addClass('#browse', 'w3-hover-text-teal');
 }
 
  
