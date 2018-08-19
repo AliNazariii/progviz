@@ -61,6 +61,14 @@ function lightTheme() {
     w3.addClass('#zoomOut', 'w3-hover-blue');
     w3.removeClass('#zoomOut','w3-hover-text-teal');
     w3.addClass('#zoomOut', 'w3-hover-text-white');
+
+    //setting change theme
+    w3.removeClass('#setting', 'w3-text-white');
+    w3.addClass('#setting','w3-text-blue');
+    w3.removeClass('#setting','w3-hover-white');
+    w3.addClass('#setting', 'w3-hover-blue');
+    w3.removeClass('#setting','w3-hover-text-teal');
+    w3.addClass('#setting', 'w3-hover-text-white');
 }
 function darkTheme() {
     w3.removeClass('#darkTheme','w3-light-gray');
@@ -97,13 +105,21 @@ function darkTheme() {
     w3.removeClass('#zoomIn','w3-hover-text-white');
     w3.addClass('#zoomIn', 'w3-hover-text-teal');
 
-    //zoozoomOutmIn change theme
+    //zoomOut change theme
     w3.removeClass('#zoomOut','w3-text-blue');
     w3.addClass('#zoomOut', 'w3-text-white');
     w3.removeClass('#zoomOut','w3-hover-blue');
     w3.addClass('#zoomOut', 'w3-hover-white');
     w3.removeClass('#zoomOut','w3-hover-text-white');
     w3.addClass('#zoomOut', 'w3-hover-text-teal');
+
+    //setting change theme
+    w3.removeClass('#setting','w3-text-blue');
+    w3.addClass('#setting', 'w3-text-white');
+    w3.removeClass('#setting','w3-hover-blue');
+    w3.addClass('#setting', 'w3-hover-white');
+    w3.removeClass('#setting','w3-hover-text-white');
+    w3.addClass('#setting', 'w3-hover-text-teal');
 }
 
 // function leftSideButtonsChangeTheme(nameID) {
