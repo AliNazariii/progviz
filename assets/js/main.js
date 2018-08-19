@@ -23,6 +23,15 @@ function lightTheme() {
     w3.removeClass('#bodyID', 'w3-black');
     w3.addClass('#bodyID','w3-light-gray');
 
+    //left sideBar icon change theme
+    w3.removeClass('#leftSideBarIcon','w3-hover-teal');
+    w3.addClass('#leftSideBarIcon', 'w3-hover-blue');
+    w3.removeClass('#leftSideBarIcon','w3-text-teal');
+    w3.addClass('#leftSideBarIcon', 'w3-text-blue');
+    w3.removeClass('#leftSideBarIcon','w3-hover-text-dark-gray');
+    w3.addClass('#leftSideBarIcon', 'w3-hover-text-white');
+
+    //left sideBar change theme
     w3.removeClass('#mySidebar', 'w3-dark-gray');
 
     //browse button change theme
@@ -109,6 +118,14 @@ function lightTheme() {
     w3.removeClass('#closeLeftSideBar','w3-hover-text-dark-gray');
     w3.addClass('#closeLeftSideBar', 'w3-hover-text-white');
 
+    //right sideBar icon change theme
+    w3.removeClass('#rightSideBarIcon','w3-hover-teal');
+    w3.addClass('#rightSideBarIcon', 'w3-hover-blue');
+    w3.removeClass('#rightSideBarIcon','w3-hover-text-dark-gray');
+    w3.addClass('#rightSideBarIcon', 'w3-hover-text-white');
+    w3.removeClass('#rightSideBarIcon','w3-text-teal');
+    w3.addClass('#rightSideBarIcon', 'w3-text-blue');
+
     //right sideBar change theme
     w3.removeClass('#myInfoBar','w3-teal');
     w3.addClass('#myInfoBar', 'w3-blue');
@@ -122,7 +139,16 @@ function lightTheme() {
 function darkTheme() {
     w3.removeClass('#bodyID','w3-light-gray');
     w3.addClass('#bodyID', 'w3-black');
-    
+
+    //left sideBar icon change theme
+    w3.removeClass('#leftSideBarIcon','w3-hover-blue');
+    w3.addClass('#leftSideBarIcon', 'w3-hover-teal');
+    w3.removeClass('#leftSideBarIcon','w3-text-blue');
+    w3.addClass('#leftSideBarIcon', 'w3-text-teal');
+    w3.removeClass('#leftSideBarIcon','w3-hover-text-white');
+    w3.addClass('#leftSideBarIcon', 'w3-hover-text-dark-gray');
+
+    //left sideBar change theme
     w3.addClass('#mySidebar', 'w3-dark-gray');
 
     //browse button change theme
@@ -207,6 +233,14 @@ function darkTheme() {
     w3.addClass('#closeLeftSideBar', 'w3-hover-teal');
     w3.removeClass('#closeLeftSideBar','w3-hover-text-white');
     w3.addClass('#closeLeftSideBar', 'w3-hover-text-dark-gray');
+
+    //right sideBar icon change theme
+    w3.removeClass('#rightSideBarIcon','w3-hover-blue');
+    w3.addClass('#rightSideBarIcon', 'w3-hover-teal');
+    w3.removeClass('#rightSideBarIcon','w3-text-blue');
+    w3.addClass('#rightSideBarIcon', 'w3-text-teal');
+    w3.removeClass('#rightSideBarIcon','w3-hover-text-white');
+    w3.addClass('#rightSideBarIcon', 'w3-hover-text-dark-gray');
 
     //right sideBar change theme
     w3.removeClass('#myInfoBar','w3-blue');
