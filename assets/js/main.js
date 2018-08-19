@@ -45,6 +45,14 @@ function lightTheme() {
     w3.addClass('#shot', 'w3-hover-blue');
     w3.removeClass('#shot','w3-hover-text-teal');
     w3.addClass('#shot', 'w3-hover-text-white');
+
+    //zoomIn change theme
+    w3.removeClass('#zoomIn', 'w3-text-white');
+    w3.addClass('#zoomIn','w3-text-blue');
+    w3.removeClass('#zoomIn','w3-hover-white');
+    w3.addClass('#zoomIn', 'w3-hover-blue');
+    w3.removeClass('#zoomIn','w3-hover-text-teal');
+    w3.addClass('#zoomIn', 'w3-hover-text-white');
 }
 function darkTheme() {
     w3.removeClass('#darkTheme','w3-light-gray');
@@ -72,6 +80,23 @@ function darkTheme() {
     w3.addClass('#shot', 'w3-hover-white');
     w3.removeClass('#shot','w3-hover-text-white');
     w3.addClass('#shot', 'w3-hover-text-teal');
+    
+    //zoomIn change theme
+    w3.removeClass('#zoomIn','w3-text-blue');
+    w3.addClass('#zoomIn', 'w3-text-white');
+    w3.removeClass('#zoomIn','w3-hover-blue');
+    w3.addClass('#zoomIn', 'w3-hover-white');
+    w3.removeClass('#zoomIn','w3-hover-text-white');
+    w3.addClass('#zoomIn', 'w3-hover-text-teal');
+}
+
+function leftSideButtonsChangeTheme(nameID) {
+    w3.removeClass('#browse', 'w3-text-white');
+    w3.addClass('#browse','w3-text-blue');
+    w3.removeClass('#browse','w3-hover-white');
+    w3.addClass('#browse', 'w3-hover-blue');
+    w3.removeClass('#browse','w3-hover-text-teal');
+    w3.addClass('#browse', 'w3-hover-text-white');
 }
 
  
