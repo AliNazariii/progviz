@@ -35,8 +35,8 @@
                     </a>
 
                     <div id="settingModal" class="w3-modal">
-                        <div class="w3-modal-content w3-animate-top w3-card-4">
-                            <header class="w3-container w3-blue"> 
+                        <div class="w3-modal-content w3-animate-top w3-card-4" id="settingContent">
+                            <header class="w3-container w3-blue" id="settingHeader"> 
                                 <h2>Setting</h2>
                             </header>
                             <div class="w3-container">
@@ -49,13 +49,11 @@
                                 </div>
                                 <br><br><br><br><br><br><br>
                             </div>
-                            <footer class="w3-blue w3-row">
-                                <div class="w3-col w3-blue w3-center"><a href="#" class="w3-button w3-hover-light-gray w3-hover-text-blue" style="width:100%" onclick="closeSetting()">Done!</a></div>
+                            <footer class="w3-blue w3-row" id="settingFooter">
+                                <div class="w3-col w3-blue w3-center"><a href="#" class="w3-button w3-hover-light-gray w3-hover-text-blue" id="settingConfirmButton" style="width:100%" onclick="closeSetting()">Done!</a></div>
                             </footer>
                         </div>
                      </div>
-
-
                 </div>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-hover-text-white w3-text-blue" id="search">
                     <i class="fas fa-search w3-xlarge"></i>
