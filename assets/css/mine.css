@@ -31,3 +31,8 @@
 .tooltip:hover .searchText {
     visibility: visible;
 }
+
+
+.fontWeb {
+    font-family:'B Nazanin',tahoma, arial;
+}
