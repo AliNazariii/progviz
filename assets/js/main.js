@@ -254,8 +254,9 @@ function darkTheme() {
 }
 
 function persian() {
+    
 
 }
 function english() {
-    
+
 }

@@ -1,0 +1,37 @@
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #2196f3;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    left: 0px;
+}
+
+.tooltip:hover .browseText {
+    visibility: visible;
+}
+.tooltip:hover .shotText {
+    visibility: visible;
+}
+.tooltip:hover .zoomInText {
+    visibility: visible;
+}
+.tooltip:hover .zoomOutText {
+    visibility: visible;
+}
+.tooltip:hover .settingText {
+    visibility: visible;
+}
+.tooltip:hover .searchText {
+    visibility: visible;
+}
