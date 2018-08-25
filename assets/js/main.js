@@ -1,14 +1,14 @@
 var themeBoolean = true; //true for light
 
 function openSideBar() {
-    document.getElementById("mySidebar").style.width = "85px";
+    document.getElementById("mySidebar").style.width = "7em";
 }
 function closeSideBar() {
     document.getElementById("mySidebar").style.width = "0";
 }
 
 function openInfoBar() {
-    document.getElementById("myInfoBar").style.width = "300px";
+    document.getElementById("myInfoBar").style.width = "20em";
 }
 function closeInfoBar() {
     document.getElementById("myInfoBar").style.width = "0";
