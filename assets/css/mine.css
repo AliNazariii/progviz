@@ -1,7 +1,6 @@
 .tooltip {
     position: relative;
 }
-
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -14,7 +13,6 @@
     top: 9px;
     left: -18px;
 }
-
 .tooltip:hover .browseText {
     visibility: visible;
 }

@@ -37,21 +37,21 @@
                     <div id="settingModal" class="w3-modal">
                         <div class="w3-modal-content w3-animate-top w3-card-4" id="settingContent">
                             <header class="w3-container w3-blue" id="settingHeader"> 
-                                <h2>Setting</h2>
+                                <h2 id="settingHeaderLabel">Setting</h2>
                             </header>
                             <div class="w3-container">
-                                <div class="w3-container w3-light-gray w3-margin">
-                                    <p class="w3-large">Theme:</p>
+                                <div class="w3-container w3-light-gray w3-margin" id="themeBoolean">
+                                    <p class="w3-large" id="themeLabel">Theme:</p>
                                     <div class="w3-bar w3-margin" style="display:flex">
-                                        <button class="w3-bar-item w3-button w3-blue w3-hover-blue" id="lightTheme" onclick="lightTheme()">Light</button>
-                                        <button class="w3-bar-item w3-button w3-hover-blue" id="darkTheme" onclick="darkTheme()">Dark</button>
+                                        <button class="w3-bar-item w3-button w3-blue w3-hover-blue w3-medium" id="lightTheme" onclick="lightTheme()">Light</button>
+                                        <button class="w3-bar-item w3-button w3-hover-blue w3-medium" id="darkTheme" onclick="darkTheme()">Dark</button>
                                     </div>
                                 </div>
                                 <div class="w3-container w3-light-gray w3-margin">
-                                    <p class="w3-large">Language:</p>
+                                    <p class="w3-large" id="languageLabel">Language:</p>
                                     <div class="w3-bar w3-margin" style="display:flex">
-                                        <button class="w3-bar-item w3-button w3-blue w3-hover-blue" id="englishLanguage" onclick="english()">English</button>
-                                        <button class="w3-bar-item w3-button w3-hover-blue" id="persianLanguage" onclick="persian()">Persian</button>
+                                        <button class="w3-bar-item w3-button w3-blue w3-hover-blue w3-medium" id="englishLanguage" onclick="english()">English</button>
+                                        <button class="w3-bar-item w3-button w3-hover-blue w3-medium" id="persianLanguage" onclick="persian()">Persian</button>
                                     </div>
                                 </div>
                                 <br><br><br><br><br><br><br>

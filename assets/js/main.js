@@ -1,3 +1,5 @@
+var themeBoolean = true; //true for light
+
 function openSideBar() {
     document.getElementById("mySidebar").style.width = "85px";
 }
@@ -104,6 +106,8 @@ function lightTheme() {
     w3.addClass('#lightTheme','w3-hover-blue');
     w3.removeClass('#darkTheme','w3-hover-teal');
     w3.addClass('#darkTheme','w3-hover-blue');
+
+    themeBoolean = true;
 
     //language setting section change theme
     if(document.getElementById('persianLanguage').classList.contains("w3-teal")) {
@@ -247,6 +251,8 @@ function darkTheme() {
     w3.removeClass('#darkTheme','w3-hover-blue');
     w3.addClass('#darkTheme','w3-hover-teal');
 
+    themeBoolean = false;
+
     //language setting section change theme
     if(document.getElementById('persianLanguage').classList.contains("w3-blue")) {
         w3.removeClass('#persianLanguage','w3-blue');
@@ -310,7 +316,16 @@ function persian() {
     document.getElementById('zoomInText').innerText= "زوم بیشتر";
     document.getElementById('zoomOutText').innerText= "زوم کمتر";
     document.getElementById('settingText').innerText= "تنظیمات";
-    document.getElementById('searchText').innerText= "جستجو";    
+    document.getElementById('searchText').innerText= "جستجو";
+    document.getElementById('themeLabel').innerText= ":تم برنامه";
+    document.getElementById('lightTheme').innerText= "روشن";    
+    document.getElementById('darkTheme').innerText= "تیره";
+    document.getElementById('languageLabel').innerText= ":زبان";
+    document.getElementById('englishLanguage').innerText= "انگلیسی";    
+    document.getElementById('persianLanguage').innerText= "فارسی";
+    document.getElementById('settingConfirmButton').innerText= "بستن";
+    document.getElementById('settingHeaderLabel').innerText= "تنظیمات";
+    
 
     //setting modal section change color 
     w3.removeClass('#englishLanguage','w3-blue');
@@ -320,7 +335,7 @@ function persian() {
     w3.addClass('#persianLanguage','w3-blue');
 
     //setting modal section change color 
-    if(document.getElementById('darkTheme').classList.contains("w3-teal") || document.getElementById('lightTheme').classList.contains("w3-teal")) {
+    if(!themeBoolean) {
         w3.removeClass('#englishLanguage','w3-teal');
         w3.addClass('#englishLanguage','w3-light-gray');
 
@@ -341,10 +356,18 @@ function english() {
     document.getElementById('zoomInText').innerText= "ZoomIn";
     document.getElementById('zoomOutText').innerText= "ZoomOut";
     document.getElementById('settingText').innerText= "Setting";
-    document.getElementById('searchText').innerText= "Search";    
+    document.getElementById('searchText').innerText= "Search";   
+    document.getElementById('themeLabel').innerText= "Theme:";
+    document.getElementById('lightTheme').innerText= "Light";    
+    document.getElementById('darkTheme').innerText= "Dark";
+    document.getElementById('languageLabel').innerText= "Language:";
+    document.getElementById('englishLanguage').innerText= "English";    
+    document.getElementById('persianLanguage').innerText= "Persian";
+    document.getElementById('settingConfirmButton').innerText= "Done!"; 
+    document.getElementById('settingHeaderLabel').innerText= "Setting";
 
     //setting modal section change color 
-    if(document.getElementById('darkTheme').classList.contains("w3-blue") || document.getElementById('lightTheme').classList.contains("w3-blue")) {
+    if(themeBoolean) {
         w3.removeClass('#persianLanguage','w3-blue');
         w3.addClass('#persianLanguage','w3-light-gray');
 
