@@ -139,6 +139,15 @@ function lightTheme() {
     w3.addClass('#search', 'w3-hover-text-white');
     document.getElementById('searchText').style.backgroundColor= "#2196f3";
 
+    //home button change theme
+    w3.removeClass('#home', 'w3-text-white');
+    w3.addClass('#home','w3-text-blue');
+    w3.removeClass('#home','w3-hover-teal');
+    w3.addClass('#home', 'w3-hover-blue');
+    w3.removeClass('#home','w3-hover-text-dark-gray');
+    w3.addClass('#home', 'w3-hover-text-white');
+    document.getElementById('homeText').style.backgroundColor= "#2196f3";
+
     //closeLeftSideBar button change theme
     w3.removeClass('#closeLeftSideBar', 'w3-text-white');
     w3.addClass('#closeLeftSideBar','w3-text-blue');
@@ -283,6 +292,15 @@ function darkTheme() {
     w3.addClass('#search', 'w3-hover-text-dark-gray');
     document.getElementById('searchText').style.backgroundColor= "#009688";
 
+    //home button change theme
+    w3.removeClass('#home', 'w3-text-blue');
+    w3.addClass('#home','w3-text-white');
+    w3.removeClass('#home','w3-hover-blue');
+    w3.addClass('#home', 'w3-hover-teal');
+    w3.removeClass('#home','w3-hover-text-white');
+    w3.addClass('#home', 'w3-hover-text-dark-gray');
+    document.getElementById('homeText').style.backgroundColor= "#009688";
+
     //closeLeftSideBar button change theme
     w3.removeClass('#closeLeftSideBar','w3-text-blue');
     w3.addClass('#closeLeftSideBar', 'w3-text-white');
@@ -325,6 +343,7 @@ function persian() {
     document.getElementById('persianLanguage').innerText= "فارسی";
     document.getElementById('settingConfirmButton').innerText= "بستن";
     document.getElementById('settingHeaderLabel').innerText= "تنظیمات";
+    document.getElementById('homeText').innerText= "خانه";
     
 
     //setting modal section change color 
@@ -365,6 +384,7 @@ function english() {
     document.getElementById('persianLanguage').innerText= "Persian";
     document.getElementById('settingConfirmButton').innerText= "Done!"; 
     document.getElementById('settingHeaderLabel').innerText= "Setting";
+    document.getElementById('homeText').innerText= "Home";
 
     //setting modal section change color 
     if(themeBoolean) {
