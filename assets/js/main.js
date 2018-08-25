@@ -252,3 +252,10 @@ function darkTheme() {
     w3.removeClass('#closeRightSideBar','w3-hover-text-white');
     w3.addClass('#closeRightSideBar', 'w3-hover-text-dark-gray');
 }
+
+function persian() {
+
+}
+function english() {
+    
+}
