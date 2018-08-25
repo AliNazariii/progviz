@@ -105,6 +105,26 @@ function lightTheme() {
     w3.removeClass('#darkTheme','w3-hover-teal');
     w3.addClass('#darkTheme','w3-hover-blue');
 
+    //language setting section change theme
+    if(document.getElementById('persianLanguage').classList.contains("w3-teal")) {
+        w3.removeClass('#persianLanguage','w3-teal');
+        w3.addClass('#persianLanguage','w3-blue');
+
+        w3.removeClass('#englishLanguage','w3-hover-teal');
+        w3.addClass('#englishLanguage','w3-hover-blue');
+        w3.removeClass('#persianLanguage','w3-hover-teal');
+        w3.addClass('#persianLanguage','w3-hover-blue');
+    }
+    else {
+        w3.removeClass('#englishLanguage','w3-teal');
+        w3.addClass('#englishLanguage','w3-blue');
+
+        w3.removeClass('#englishLanguage','w3-hover-teal');
+        w3.addClass('#englishLanguage','w3-hover-blue');
+        w3.removeClass('#persianLanguage','w3-hover-teal');
+        w3.addClass('#persianLanguage','w3-hover-blue');
+    }
+
 
     //search button change theme
     w3.removeClass('#search', 'w3-text-white');
@@ -227,6 +247,26 @@ function darkTheme() {
     w3.removeClass('#darkTheme','w3-hover-blue');
     w3.addClass('#darkTheme','w3-hover-teal');
 
+    //language setting section change theme
+    if(document.getElementById('persianLanguage').classList.contains("w3-blue")) {
+        w3.removeClass('#persianLanguage','w3-blue');
+        w3.addClass('#persianLanguage','w3-teal');
+
+        w3.removeClass('#englishLanguage','w3-hover-blue');
+        w3.addClass('#englishLanguage','w3-hover-teal');
+        w3.removeClass('#persianLanguage','w3-hover-blue');
+        w3.addClass('#persianLanguage','w3-hover-teal');
+    }
+    else {
+        w3.removeClass('#englishLanguage','w3-blue');
+        w3.addClass('#englishLanguage','w3-teal');
+
+        w3.removeClass('#englishLanguage','w3-hover-blue');
+        w3.addClass('#englishLanguage','w3-hover-teal');
+        w3.removeClass('#persianLanguage','w3-hover-blue');
+        w3.addClass('#persianLanguage','w3-hover-teal');
+    }
+
 
     //search button change theme
     w3.removeClass('#search','w3-text-blue');
@@ -265,7 +305,7 @@ function darkTheme() {
 }
 
 function persian() {
-    document.getElementById('browseText').innerText= "انتخاب";
+    document.getElementById('browseText').innerText= "انتخاب فایل";
     document.getElementById('shotText').innerText= "عکس گرفتن";
     document.getElementById('zoomInText').innerText= "زوم بیشتر";
     document.getElementById('zoomOutText').innerText= "زوم کمتر";
@@ -278,6 +318,22 @@ function persian() {
 
     w3.removeClass('#persianLanguage','w3-light-gray');
     w3.addClass('#persianLanguage','w3-blue');
+
+    //setting modal section change color 
+    if(document.getElementById('darkTheme').classList.contains("w3-teal") || document.getElementById('lightTheme').classList.contains("w3-teal")) {
+        w3.removeClass('#englishLanguage','w3-teal');
+        w3.addClass('#englishLanguage','w3-light-gray');
+
+        w3.removeClass('#persianLanguage','w3-light-gray');
+        w3.addClass('#persianLanguage','w3-teal');
+    }
+    else {
+        w3.removeClass('#englishLanguage','w3-blue');
+        w3.addClass('#englishLanguage','w3-light-gray');
+
+        w3.removeClass('#persianLanguage','w3-light-gray');
+        w3.addClass('#persianLanguage','w3-blue');
+    }
 }
 function english() {
     document.getElementById('browseText').innerText= "Browse";
@@ -286,11 +342,20 @@ function english() {
     document.getElementById('zoomOutText').innerText= "ZoomOut";
     document.getElementById('settingText').innerText= "Setting";
     document.getElementById('searchText').innerText= "Search";    
-    
-    //setting modal section change color 
-    w3.removeClass('#persianLanguage','w3-blue');
-    w3.addClass('#persianLanguage','w3-light-gray');
 
-    w3.removeClass('#englishLanguage','w3-light-gray');
-    w3.addClass('#englishLanguage','w3-blue');
+    //setting modal section change color 
+    if(document.getElementById('darkTheme').classList.contains("w3-blue") || document.getElementById('lightTheme').classList.contains("w3-blue")) {
+        w3.removeClass('#persianLanguage','w3-blue');
+        w3.addClass('#persianLanguage','w3-light-gray');
+
+        w3.removeClass('#englishLanguage','w3-light-gray');
+        w3.addClass('#englishLanguage','w3-blue');
+    }
+    else {
+        w3.removeClass('#persianLanguage','w3-teal');
+        w3.addClass('#persianLanguage','w3-light-gray');
+
+        w3.removeClass('#englishLanguage','w3-light-gray');
+        w3.addClass('#englishLanguage','w3-teal');
+    }
 }
