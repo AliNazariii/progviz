@@ -1,5 +1,5 @@
 function openSideBar() {
-    document.getElementById("mySidebar").style.width = "120px";
+    document.getElementById("mySidebar").style.width = "85px";
 }
 function closeSideBar() {
     document.getElementById("mySidebar").style.width = "0";
@@ -254,7 +254,7 @@ function darkTheme() {
 }
 
 function persian() {
-    
+
 
 }
 function english() {
