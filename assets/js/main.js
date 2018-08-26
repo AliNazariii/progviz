@@ -344,6 +344,18 @@ function persian() {
     document.getElementById('settingConfirmButton').innerText= "بستن";
     document.getElementById('settingHeaderLabel').innerText= "تنظیمات";
     document.getElementById('homeText').innerText= "خانه";
+
+    document.getElementById('graphInfoLabel').style.textAlign = "right";
+    document.getElementById('graphInfoLabel').innerText= ":اطلاعات گراف";
+
+    document.getElementById('GraphNameLabel').style.textAlign = "right";
+    document.getElementById('GraphNameLabel').innerText= ":نام";
+
+    document.getElementById('nodeNameLabel').style.textAlign = "right";
+    document.getElementById('nodeNameLabel').innerText= ":گره ها";
+    
+    document.getElementById('edgeNameLabel').style.textAlign = "right";
+    document.getElementById('edgeNameLabel').innerText= ":یال ها";
     
 
     //setting modal section change color 
@@ -385,6 +397,19 @@ function english() {
     document.getElementById('settingConfirmButton').innerText= "Done!"; 
     document.getElementById('settingHeaderLabel').innerText= "Setting";
     document.getElementById('homeText').innerText= "Home";
+
+    document.getElementById('graphInfoLabel').style.textAlign = "left";
+    document.getElementById('graphInfoLabel').innerText= "Graph info:";
+
+    document.getElementById('GraphNameLabel').style.textAlign = "left";
+    document.getElementById('GraphNameLabel').innerText= "Name:";
+
+    document.getElementById('nodeNameLabel').style.textAlign = "left";
+    document.getElementById('nodeNameLabel').innerText= "Nodes:";
+    
+    document.getElementById('edgeNameLabel').style.textAlign = "left";
+    document.getElementById('edgeNameLabel').innerText= "Edges:";
+
 
     //setting modal section change color 
     if(themeBoolean) {

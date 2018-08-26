@@ -14,13 +14,13 @@
         <div>
             <div class="w3-display-right w3-center w3-card w3-animate-right w3-sidebar w3-bar-block w3-small w3-blue" id="myInfoBar" style="width: 0;transition: 0.3s;">
                 <div class="w3-container w3-xlarge w3-left-align w3-padding-large w3-margin">
-                    <p>Graph info:</p>
+                    <p id="graphInfoLabel" style="text-align: left">Graph info:</p>
                 </div>
 
                 <div class="w3-container w3-large w3-left-align w3-margin">
-                    <p class="w3-container">Name:</p>
-                    <p class="w3-container">Nodes:</p>
-                    <p class="w3-container">Edges:</p>
+                    <p class="w3-container" id="GraphNameLabel" style="text-align: left">Name:</p>
+                    <p class="w3-container" id="nodeNameLabel" style="text-align: left">Nodes:</p>
+                    <p class="w3-container" id="edgeNameLabel" style="text-align: left">Edges:</p>
                 </div>
 
                 <a href="#" onclick="closeInfoBar()" class="w3-display-topleft w3-xlarge w3-margin-bottom w3-button w3-padding-xxlarge w3-hover-blue w3-text-white" id="closeRightSideBar">
