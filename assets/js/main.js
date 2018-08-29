@@ -33,7 +33,7 @@ function lightTheme() {
     w3.addClass('#leftSideBarIcon', 'w3-hover-text-white');
 
     //left sideBar change theme
-    w3.removeClass('#mySidebar', 'w3-dark-gray');
+    w3.addClass('#mySidebar', 'w3-white');
 
     //browse button change theme
     w3.removeClass('#browse', 'w3-text-white');
@@ -168,7 +168,7 @@ function lightTheme() {
 }
 function darkTheme() {
     w3.removeClass('#bodyID','w3-light-gray');
-    document.getElementById('bodyID').style.backgroundColor= "#1E1E1E";
+    document.getElementById('bodyID').style.backgroundColor= "#252526";
 
     //left sideBar icon change theme
     w3.removeClass('#leftSideBarIcon','w3-hover-blue');
@@ -179,7 +179,7 @@ function darkTheme() {
     w3.addClass('#leftSideBarIcon', 'w3-hover-text-dark-gray');
 
     //left sideBar change theme
-    w3.addClass('#mySidebar', 'w3-dark-gray');
+    document.getElementById('mySidebar').style.backgroundColor= "#333333";
 
     //browse button change theme
     w3.removeClass('#browse','w3-text-blue');
