@@ -22,7 +22,6 @@ function openSetting() {
 }
 
 function lightTheme() {
-    w3.removeClass('#bodyID', 'w3-black');
     w3.addClass('#bodyID','w3-light-gray');
 
     //left sideBar icon change theme
@@ -169,7 +168,7 @@ function lightTheme() {
 }
 function darkTheme() {
     w3.removeClass('#bodyID','w3-light-gray');
-    w3.addClass('#bodyID', 'w3-black');
+    document.getElementById('bodyID').style.backgroundColor= "#1E1E1E";
 
     //left sideBar icon change theme
     w3.removeClass('#leftSideBarIcon','w3-hover-blue');
