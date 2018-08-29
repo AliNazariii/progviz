@@ -12,7 +12,7 @@
     <body class="w3-light-gray w3-mobile fontWeb" id="bodyID">
 
         <!-- Graph section -->
-        <div>
+        <div id="graphSection">
             <img src="assets/image/stewart-aboutme.jpg" class="w3-image w3-card w3-mobile">
         </div>
         
@@ -57,33 +57,6 @@
                     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-hover-text-white w3-text-blue" onclick="openSetting()" id="setting">
                         <i class="fas fa-cog w3-xlarge"></i>
                     </a>
-
-                    <div id="settingModal" class="w3-modal" style="transition: 0.3s;">
-                        <div class="w3-modal-content w3-animate-top w3-card-4" id="settingContent">
-                            <header class="w3-blue" id="settingHeader"> 
-                                <p class="w3-xxlarge w3-padding-large" id="settingHeaderLabel">Setting</p>
-                            </header>
-                            <div class="w3-container">
-                                <div class="w3-container w3-light-gray w3-margin" id="themeBoolean">
-                                    <p class="w3-large" id="themeLabel">Theme:</p>
-                                    <div class="w3-bar w3-margin" style="display:flex">
-                                        <button class="w3-bar-item w3-button w3-blue w3-hover-blue w3-medium" id="lightTheme" onclick="lightTheme()">Light</button>
-                                        <button class="w3-bar-item w3-button w3-hover-blue w3-medium" id="darkTheme" onclick="darkTheme()">Dark</button>
-                                    </div>
-                                </div>
-                                <div class="w3-container w3-light-gray w3-margin">
-                                    <p class="w3-large" id="languageLabel">Language:</p>
-                                    <div class="w3-bar w3-margin" style="display:flex">
-                                        <button class="w3-bar-item w3-button w3-blue w3-hover-blue w3-medium" id="englishLanguage" onclick="english()">English</button>
-                                        <button class="w3-bar-item w3-button w3-hover-blue w3-medium" id="persianLanguage" onclick="persian()">Persian</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <footer class="w3-blue w3-row" id="settingFooter">
-                                <div class="w3-col w3-blue w3-center"><a href="#" class="w3-button w3-hover-light-gray w3-hover-text-blue w3-medium" id="settingConfirmButton" style="width:100%" onclick="closeSetting()">Done!</a></div>
-                            </footer>
-                        </div>
-                     </div>
                 </div>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-blue w3-hover-text-white w3-text-blue" id="search">
                     <i class="fas fa-search w3-xlarge"></i>
@@ -95,6 +68,34 @@
                     <i class="fas fa-times"></i>                        
                 </a>
             </div>
+
+            <!-- Setting Modal -->
+            <div id="settingModal" class="w3-modal" style="transition: 0.3s;">
+                <div class="w3-modal-content w3-animate-top w3-card-4" id="settingContent">
+                    <header class="w3-blue" id="settingHeader"> 
+                        <p class="w3-xxlarge w3-padding-large" id="settingHeaderLabel">Setting</p>
+                    </header>
+                    <div class="w3-container">
+                        <div class="w3-container w3-light-gray w3-margin" id="themeBoolean">
+                            <p class="w3-large" id="themeLabel">Theme:</p>
+                            <div class="w3-bar w3-margin" style="display:flex">
+                                <button class="w3-bar-item w3-button w3-blue w3-hover-blue w3-medium" id="lightTheme" onclick="lightTheme()">Light</button>
+                                <button class="w3-bar-item w3-button w3-hover-blue w3-medium" id="darkTheme" onclick="darkTheme()">Dark</button>
+                            </div>
+                        </div>
+                        <div class="w3-container w3-light-gray w3-margin">
+                            <p class="w3-large" id="languageLabel">Language:</p>
+                            <div class="w3-bar w3-margin" style="display:flex">
+                                <button class="w3-bar-item w3-button w3-blue w3-hover-blue w3-medium" id="englishLanguage" onclick="english()">English</button>
+                                <button class="w3-bar-item w3-button w3-hover-blue w3-medium" id="persianLanguage" onclick="persian()">Persian</button>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="w3-blue w3-row" id="settingFooter">
+                        <div class="w3-col w3-blue w3-center"><a href="#" class="w3-button w3-hover-light-gray w3-hover-text-blue w3-medium" id="settingConfirmButton" style="width:100%" onclick="closeSetting()">Done!</a></div>
+                    </footer>
+                </div>
+            </div>
             
             <i class="fas fa-align-justify w3-display-topleft w3-right w3-margin w3-button w3-xxlarge w3-text-blue w3-hover-blue w3-hover-text-white" onclick="openSideBar()" id="leftSideBarIcon"></i>
         </div>
@@ -102,7 +103,7 @@
         
         
 
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/mine.js"></script>
         <script src="assets/js/w3.js"></script>
 
     </body>
