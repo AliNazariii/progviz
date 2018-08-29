@@ -33,7 +33,7 @@ function lightTheme() {
     w3.addClass('#leftSideBarIcon', 'w3-hover-text-white');
 
     //left sideBar change theme
-    w3.addClass('#mySidebar', 'w3-white');
+    document.getElementById('mySidebar').style.backgroundColor= "#ffffff";
 
     //browse button change theme
     w3.removeClass('#browse', 'w3-text-white');
