@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AliNazariii/ProGViz/issues"
   },
-  "homepage": "https://github.com/AliNazariii/ProGViz#readme"
+  "homepage": "https://github.com/AliNazariii/ProGViz#readme",
+  "devDependencies": {
+    "electron": "^2.0.8"
+  }
 }
