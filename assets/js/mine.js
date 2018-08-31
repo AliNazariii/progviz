@@ -1,14 +1,14 @@
 var themeBoolean = true; //true for light
 
-// const fs = require('fs');
-// fs.readFile('./setting.json', 'utf-8', (err, data) => {
-//     if (err) {
-//         console.log("LOL");
-//     } else {
-//         var data = JSON.parse(data);
-//         console.log(data.language + " " + data.theme);
-//     }
-// });
+const fs = require('fs');
+fs.readFile('../json/setting.json', 'utf-8', (err, data) => {
+    if (err) {
+        console.log("LOL");
+    } else {
+        var data = JSON.parse(data);
+        console.log(data.language + " " + data.theme);
+    }
+});
 
 function openSideBar() {
     document.getElementById("mySidebar").style.width = "7em";
