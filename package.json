@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AliNazariii/ProGViz#readme",
   "devDependencies": {
     "electron": "^2.0.8"
+  },
+  "dependencies": {
+    "electron-store": "^2.0.0"
   }
 }
