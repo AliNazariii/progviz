@@ -1,14 +1,46 @@
 var themeBoolean = true; //true for light
+var languageBoolean = true; //true for english
 
-const fs = require('fs');
-fs.readFile('../json/setting.json', 'utf-8', (err, data) => {
-    if (err) {
-        console.log("LOL");
+fs = require('fs');
+var setting = JSON.parse(fs.readFileSync(__dirname + '/setting.json'));
+
+function loadSetting() {
+    if (setting.language == true) {
+        languageBoolean = true;
+        english();
     } else {
-        var data = JSON.parse(data);
-        console.log(data.language + " " + data.theme);
+        languageBoolean = false;
+        persian();
     }
-});
+
+    if (setting.theme == true) {
+        themeBoolean = true;
+        lightTheme();
+    } else {
+        themeBoolean = false;
+        darkTheme();
+    }
+    console.log(JSON.stringify(setting));
+}
+function saveSetting() {
+    fs.writeFile(__dirname + '/setting.json', JSON.stringify(setting));
+}
+
+loadSetting();
+
+var scaleCount = 1;
+function zoomIn() {
+    var component = document.getElementById('graphSection').style;
+    scaleCount += 0.2;
+    component.transform = 'scale(' + scaleCount + ')';
+    console.log(scaleCount);
+}
+function zoomOut() {
+    var component = document.getElementById('graphSection').style;
+    scaleCount -= 0.2;
+    component.transform = 'scale(' + scaleCount + ')';
+    console.log(scaleCount);
+}
 
 function openSideBar() {
     document.getElementById("mySidebar").style.width = "7em";
@@ -31,7 +63,13 @@ function openSetting() {
     document.getElementById('settingModal').style.display="block";
 }
 
+function openGraph(input) {
+    document.getElementById('graphPic').src = input.files[0].path;
+}
+
 function lightTheme() {
+    themeBoolean = true;
+    setting.theme = true;
     w3.addClass('#bodyID','w3-light-gray');
 
     //left sideBar icon change theme
@@ -114,7 +152,7 @@ function lightTheme() {
     themeBoolean = true;
 
     //language setting section change theme
-    if(document.getElementById('persianLanguage').classList.contains("w3-teal")) {
+    if(!languageBoolean) { //this is for persian language
         w3.removeClass('#persianLanguage','w3-teal');
         w3.addClass('#persianLanguage','w3-blue');
 
@@ -141,14 +179,6 @@ function lightTheme() {
     w3.addClass('#search', 'w3-hover-blue');
     w3.removeClass('#search','w3-hover-text-dark-gray');
     w3.addClass('#search', 'w3-hover-text-white');
-
-    //home button change theme
-    w3.removeClass('#home', 'w3-text-white');
-    w3.addClass('#home','w3-text-blue');
-    w3.removeClass('#home','w3-hover-teal');
-    w3.addClass('#home', 'w3-hover-blue');
-    w3.removeClass('#home','w3-hover-text-dark-gray');
-    w3.addClass('#home', 'w3-hover-text-white');
 
     //closeLeftSideBar button change theme
     w3.removeClass('#closeLeftSideBar', 'w3-text-white');
@@ -177,6 +207,9 @@ function lightTheme() {
     w3.addClass('#closeRightSideBar', 'w3-hover-text-white');
 }
 function darkTheme() {
+    themeBoolean = false;
+    setting.theme = false;
+
     w3.removeClass('#bodyID','w3-light-gray');
     document.getElementById('bodyID').style.backgroundColor= "#252526";
 
@@ -260,7 +293,7 @@ function darkTheme() {
     themeBoolean = false;
 
     //language setting section change theme
-    if(document.getElementById('persianLanguage').classList.contains("w3-blue")) {
+    if(!languageBoolean) { //this is for persian language
         w3.removeClass('#persianLanguage','w3-blue');
         w3.addClass('#persianLanguage','w3-teal');
 
@@ -287,14 +320,6 @@ function darkTheme() {
     w3.addClass('#search', 'w3-hover-teal');
     w3.removeClass('#search','w3-hover-text-white');
     w3.addClass('#search', 'w3-hover-text-dark-gray');
-
-    //home button change theme
-    w3.removeClass('#home', 'w3-text-blue');
-    w3.addClass('#home','w3-text-white');
-    w3.removeClass('#home','w3-hover-blue');
-    w3.addClass('#home', 'w3-hover-teal');
-    w3.removeClass('#home','w3-hover-text-white');
-    w3.addClass('#home', 'w3-hover-text-dark-gray');
 
     //closeLeftSideBar button change theme
     w3.removeClass('#closeLeftSideBar','w3-text-blue');
@@ -324,6 +349,9 @@ function darkTheme() {
 }
 
 function persian() {
+    languageBoolean = false;
+    setting.language = false;
+
     document.getElementById('themeLabel').innerText= ":تم برنامه";
     document.getElementById('lightTheme').innerText= "روشن";    
     document.getElementById('darkTheme').innerText= "تیره";
@@ -370,6 +398,9 @@ function persian() {
     }
 }
 function english() {
+    languageBoolean = true;
+    setting.language = true;
+
     document.getElementById('themeLabel').innerText= "Theme:";
     document.getElementById('lightTheme').innerText= "Light";    
     document.getElementById('darkTheme').innerText= "Dark";
