@@ -18,7 +18,7 @@ sudo apt-get install nodejs npm
 Clone the repository:
 
 ```
-git clone https://github.com/ghaffarian/progviz.git
+git clone https://github.com/AliNazariii/progviz.git
 ```
 
 Now change to the cloned directory and install dependencies using npm:
